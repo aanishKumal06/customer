@@ -10,11 +10,15 @@
   <!-- Header -->
   <header>
     <div class="container header-content">
-      <a href="index.html" class="logo">Campus Nest</a>
+      <div class="logo-container">
+        <a href="index.html" class="logo"> <img src="img/logo.png" alt=""></a>
+        <a href="index.html" class="logo-text">Marshmallow Haven</a>
+      </div>
+    
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="room-details.html" class="active">Room Details</a></li>
+          <li><a href="rooms.html" >Rooms</a></li>
           <li><a href="hostel-rules.html">Rules</a></li>
           <li><a href="#">About us</a></li>
           <li class="notification-icon">
@@ -48,13 +52,11 @@
                   <img src="img/profile.jpg" alt="Profile" class="mini-profile-pic">
                   <div>
                     <h4>Hema Gurung</h4>
-                    <p>ST123456</p>
                   </div>
                 </div>
                 <ul class="profile-menu">
                   <li><a href="student-dashboard.html">My Profile</a></li>
-                  <li><a href="#">Settings</a></li>
-                  <li><a href="#">Help</a></li>
+                  <li><a href="complaint.html">Complaint</a></li>
                   <li><a href="index.html">Logout</a></li>
                 </ul>
               </div>
@@ -84,7 +86,7 @@
             </div>
             
             <div class="form-group">
-              <label for="studentid">Student ID *</label>
+              <label for="studentid">Username *</label>
               <input type="text" id="studentid" class="form-control" required>
             </div>
           </div>
@@ -156,19 +158,12 @@
           </div>
           
           <div class="form-row">
-            <div class="form-group">
-              <label for="room-type-pref">Room Type *</label>
-              <select id="room-type-pref" class="form-control" required>
-                <option value="">Select Room Type</option>
-                <option value="single-ac">Single Occupancy (AC)</option>
-                <option value="single-non-ac">Single Occupancy (Non-AC)</option>
-                <option value="double-ac">Double Occupancy (AC)</option>
-                <option value="double-non-ac">Double Occupancy (Non-AC)</option>
-                <option value="single-deluxe">Single Deluxe (AC)</option>
-                <option value="double-deluxe">Double Deluxe (AC)</option>
-              </select>
-            </div>
             
+            <div class="form-group">
+              <label for="check-in">Expected Check-in Date *</label>
+              <input type="date" id="check-in" class="form-control" required>
+            </div>
+
             <div class="form-group">
               <label for="duration">Duration of Stay *</label>
               <select id="duration" class="form-control" required>
@@ -177,16 +172,12 @@
                 <option value="3-months">3 Months</option>
                 <option value="6-months">6 Months</option>
                 <option value="1-year">1 Year</option>
-                <option value="entire-course">Entire Course Duration</option>
               </select>
             </div>
           </div>
           
           <div class="form-row">
-            <div class="form-group">
-              <label for="check-in">Expected Check-in Date *</label>
-              <input type="date" id="check-in" class="form-control" required>
-            </div>
+            
             
             <div class="form-group">
               <label for="special-requests">Special Requests</label>
@@ -249,9 +240,9 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="student-dashboard.html">Dashboard</a></li>
-            <li><a href="room-details.html">Room Details</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
             <li><a href="hostel-rules.html">Rules</a></li>
-            <li><a href="application.html">Apply</a></li>
+            <li><a href="complaint.html">Complaint</a></li>
           </ul>
         </div>
       </div>

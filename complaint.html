@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Dashboard - Campus Nest</title>
+  <title>Hostel Application - Campus Nest</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -62,69 +62,61 @@
               </div>
             </div>
           </li>
+      
         </ul>
-      </nav>
-    </div>
-  </header>
+        </nav>
+        </div>
+   </header>
 
   <!-- Main Content -->
   <section class="main-content">
     <div class="container">
-      <h1 class="section-title">Student Dashboard</h1>
+      <h1 class="section-title">Complaint Form</h1>
       
-      <div class="dashboard-container">
-        <div class="profile-section">
-          <img src="img/profile.jpg" alt="Profile" class="mini-profile-pic">
-          <h2>Hema Gurung</h2>
-          <p>Student ID: ST123456</p>
-          
-          <div class="profile-details">
-            <p><span>Gender:</span> <span>Female</span></p>
-            <p><span>Email:</span> <span>hema.grg@example.com</span></p>
-            <p><span>Contact:</span> <span>+1 123-456-7890</span></p>
-            <p><span>Room Number:</span> <span>B-204</span></p>
-            <p><span>Check-in Date:</span> <span>01/09/2024</span></p>
+      <div class="form-container">
+        <form id="hostel-application">
+          <div class="form-group">
+            <h3>Personal Information</h3>
           </div>
           
-          <div class="profile-actions">
-            <a href="#" class="btn update-profile-btn">Update Profile</a>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullname">Full Name *</label>
+              <input type="text" id="fullname" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="studentid">Username *</label>
+              <input type="text" id="studentid" class="form-control" required>
+            </div>
           </div>
-        </div>
-        
-        <div class="status-section">
-          <h2>Application Status</h2>
-          <div class="status status-approved">Approved</div>
           
-          <h3 style="margin-top: 20px;">Room Details</h3>
-          <div class="room-preview" title="Click for more details">
-            <p><strong>Room Type:</strong> Double Occupancy (AC)</p>
-            <p><strong>Building:</strong> Block B</p>
-            <p><strong>Floor:</strong> 2nd Floor</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="id-proof">Evidence</label>
+                <input type="file" id="id-proof" class="form-control" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+          </div>
+          
       
+          
+          <div class="form-group">
+            <label for="address">Complaint</label>
+            <textarea id="address" class="form-control" rows="3" required></textarea>
           </div>
           
-          <div class="notifications">
-            <h3>Notifications</h3>
-            
-            <div class="notification notification-maintenance">
-              <h4>Scheduled Maintenance</h4>
-              <p>Water supply will be disrupted on Sunday, 10th April from 9 AM to 12 PM for maintenance work.</p>
-              <small>Posted: 5th April, 2025</small>
-            </div>
-            
-            <div class="notification notification-rule">
-              <h4>New Policy Update</h4>
-              <p>Updated guest policy: All guests must register at the reception before entering the hostel premises.</p>
-              <small>Posted: 1st April, 2025</small>
-            </div>
-            
-            <div class="notification">
-              <h4>Fee Payment Reminder</h4>
-              <p>Monthly fees for May are due by April 30th. Please make payments on time to avoid late fees.</p>
-              <small>Posted: 20th April, 2025</small>
-            </div>
+
+          
+          <div class="form-actions">
+            <button type="button" class="btn" style="background-color: #6c757d;">Cancel</button>
+            <button type="submit" class="btn">Submit</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </section>

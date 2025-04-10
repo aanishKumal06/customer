@@ -32,7 +32,27 @@
     align-items: center;
   }
   
+  .logo-container {
+    display: flex;
+    align-items: center;  
+    gap: 15px; 
+  }
+  
   .logo {
+    display: flex;
+    align-items: center;  /* Ensures vertical centering for nested elements */
+  }
+
+
+  .logo img {
+    height: 50px; /* Adjust size as needed */
+    width: auto;
+    display: block; /* Removes extra spacing below image */
+    border-radius: 50%;
+  }
+
+  .logo-text {
+    margin: 0;
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
@@ -141,7 +161,10 @@
     align-items: center;
     gap: 10px;
     border-bottom: 1px solid #eee;
+    color: black;
   }
+
+ 
   
   .mini-profile-pic {
     width: 40px;
@@ -693,15 +716,7 @@
       grid-template-columns: 1fr;
     }
   
-    /* Modified responsive adjustments for hover details */
-    .room-hover-details {
-      left: 0;
-      right: 0;
-      width: 100%;
-      top: 100%;
-    }
   
-    
   
     .notification-dropdown,
     .profile-dropdown {
