@@ -724,4 +724,46 @@
       right: -100px;
     }
   }
+  @media (min-width: 1366px) {
+    /* Styles for big screens like 15.6 inch laptops and larger */
+    body {
+      font-size: 1.1rem;
+    }
+  
+    .container {
+      max-width: 1400px;
+    }
+  
+    .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+  
+    /* Add other styles you want for large screens here */
+  }
+  
+
+
+  
+
+  
+  @media (min-width: 1366px) {
+    .room-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    }
+  
+    .room-card {
+      height: 500px; /* or whatever "larger" means for you */
+      font-size: 1.1rem;
+    }
+  
+    .room-image {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+  
+    .room-details {
+      padding: 15px;
+    }
+  }
   
